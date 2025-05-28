@@ -13,4 +13,4 @@ async function crearArchivos(cantidad) {
     console.log(`Se crearon ${cantidad} archivos.`);
 }
 
-crearArchivos(10).catch(console.error, "Hay un error");
+module.exports = crearArchivos;
