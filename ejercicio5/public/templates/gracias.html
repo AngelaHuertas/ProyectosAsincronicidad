@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gracias por tu comentario</title>
+    <link rel="stylesheet" href="../styles/stylesGracias.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>¡Gracias por tu comentario!</h2>
+        <p>Comentario: <em id="comentario-original"></em></p>
+        <p>Tu comentario fue clasificado como: <strong id="tipo"></strong></p>
+    </div>
+
+    <script>
+        document.getElementById("tipo").textContent = //busca en el HTML un elemento con id="tipo" para cambiar el texto que se ve en ese elemento.
+            sessionStorage.getItem("clasificacion") || '—';//busca en la memoria temporal el dato llamado "clasificacion". Si no encuentra nada, pone '—' como texto por defecto.
+        document.getElementById("comentario-original").textContent = // hace los mismo pero con el elemento comentario-original
+            sessionStorage.getItem("comentario") || '—'; ///busca en la memoria temporal el dato llamado "comentario". Si no encuentra nada, pone '—' como texto por defecto.
+    </script>
+</body>
+
+</html>

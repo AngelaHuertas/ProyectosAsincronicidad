@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Comentarios</title>
+</head>
+
+<body>
+    <main class="container">
+        <section>
+            <h2>Carrusel</h2>
+            <div class="carrusel">
+                <button class="flecha izquierda" onclick="anterior()">❮</button>
+                <div class="imagenes" id="contenedor">
+                    <img src="./assets/imagenes/camisa1.jpg" alt="camisa para mujer">
+                    <img src="./assets/imagenes/camisa2.jpg" alt="camisa para mujer">
+                    <img src="./assets/imagenes/pantalon1.jpg" alt="pantalon para mujer">
+                    <img src="./assets/imagenes/pantalon2.jpg" alt="pantalon para mujer">
+                    <img src="./assets/imagenes/vestido1.jpg" alt="vestido para mujer">
+                    <img src="./assets/imagenes/vestidoFlores.jpg" alt="vestido para mujer">
+                </div>
+                <button class="flecha derecha" onclick="siguiente()">❯</button>
+            </div>
+        </section>
+
+        <section id="chat-box">
+            <h2>Chat con Gemini</h2>
+            <div id="messages-container" class="output"></div>
+            <input type="text" id="user-input" class="input-box" placeholder="Escribe un mensaje..." />
+            <button onclick="sendToGemini()">Enviar</button>
+            <div id="loader" style="display:none;">Cargando...</div>
+        </section>
+    </main>
+    <script src="./logic/logica.js"></script>
+    <script src="./logic/carrusel.js"></script>
+</body>
+
+</html>
