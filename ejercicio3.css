@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f8e1f4;
+  padding: 20px;
+  color: #333;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+    text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff0f7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(191, 119, 182, 0.3);
+}
+img{
+    width: 600px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(191, 119, 182, 0.3);
+    border: white 2px solid;
+}
+
+h1 {
+  color: #a15ca1;
+  text-align: center;
+}
+
+#loader {
+  display: none;
+  font-style: italic;
+  color: #a15ca1;
+  margin-bottom: 10px;
+}
+
+#weather-info {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+#hora-actual {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #663966;
+}
+
+#error-container {
+  margin-top: 15px;
+  padding: 10px;
+  border: 1px solid #d7a8d8;
+  background: #ffe6ef;
+  border-radius: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+input,
+button {
+  padding: 10px;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+button {
+  background-color: #bf77b6;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #a05a9f;
+}
+
+#actualizar-btn {
+  margin-top: 15px;
+}
+#actualizar-btn:hover {
+  background-color: #8f4c8f;
+}
+#actualizar-btn:active {
+  background-color: #7f3f7f;
+}

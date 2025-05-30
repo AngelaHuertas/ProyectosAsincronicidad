@@ -1,0 +1,12 @@
+{
+  "name": "clima-app",
+  "version": "1.0.0",
+  "main": "ejercicio3.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ejercicio3.js"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
+}
